@@ -1,0 +1,51 @@
+{
+  "name": "test_login_standard",
+  "status": "passed",
+  "attachments": [
+    {
+      "name": "stdout",
+      "source": "c3240292-04ef-4458-8f36-555da2607fd7-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "start": 1607694322715,
+  "stop": 1607694329818,
+  "uuid": "4dade298-e045-4ef5-8054-53f87d28a840",
+  "historyId": "dafe1b6e8555778922da751c55999a72",
+  "testCaseId": "7f45d414b8e45ff90b2909050e1cc858",
+  "fullName": "Testcases.test_login.SauceDemo#test_login_standard",
+  "labels": [
+    {
+      "name": "parentSuite",
+      "value": "Testcases"
+    },
+    {
+      "name": "suite",
+      "value": "test_login"
+    },
+    {
+      "name": "subSuite",
+      "value": "SauceDemo"
+    },
+    {
+      "name": "host",
+      "value": "LAP12942"
+    },
+    {
+      "name": "thread",
+      "value": "5012-MainThread"
+    },
+    {
+      "name": "framework",
+      "value": "pytest"
+    },
+    {
+      "name": "language",
+      "value": "cpython3"
+    },
+    {
+      "name": "package",
+      "value": "Testcases.test_login"
+    }
+  ]
+}

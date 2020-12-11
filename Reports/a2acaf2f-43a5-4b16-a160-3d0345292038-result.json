@@ -1,0 +1,55 @@
+{
+  "name": "test_login_user",
+  "status": "broken",
+  "statusDetails": {
+    "message": "AttributeError: 'LoginPage' object has no attribute 'loginin'",
+    "trace": "self = <test_login.SauceDemo testMethod=test_login_user>\n\n    def test_login_user(self):\n        login_page = LoginPage(self.driver)\n        account = Account('user', 'secret')\n>       login_page.loginin(account)\nE       AttributeError: 'LoginPage' object has no attribute 'loginin'\n\nTestcases\\test_login.py:50: AttributeError"
+  },
+  "attachments": [
+    {
+      "name": "stdout",
+      "source": "f8263301-afb0-4976-825e-462b0dae39af-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "start": 1607694338270,
+  "stop": 1607694343777,
+  "uuid": "22d17a6f-ca29-4ece-8a31-7f1267fd182b",
+  "historyId": "74fd2f4ef86b4ace14f74e568566db4f",
+  "testCaseId": "988137b5c6b57beb86c68ab85d3e1935",
+  "fullName": "Testcases.test_login.SauceDemo#test_login_user",
+  "labels": [
+    {
+      "name": "parentSuite",
+      "value": "Testcases"
+    },
+    {
+      "name": "suite",
+      "value": "test_login"
+    },
+    {
+      "name": "subSuite",
+      "value": "SauceDemo"
+    },
+    {
+      "name": "host",
+      "value": "LAP12942"
+    },
+    {
+      "name": "thread",
+      "value": "5012-MainThread"
+    },
+    {
+      "name": "framework",
+      "value": "pytest"
+    },
+    {
+      "name": "language",
+      "value": "cpython3"
+    },
+    {
+      "name": "package",
+      "value": "Testcases.test_login"
+    }
+  ]
+}

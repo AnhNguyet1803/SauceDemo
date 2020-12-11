@@ -1,0 +1,29 @@
+{
+  "uuid": "394fde7d-ee3d-4b86-aa8c-0bfc00d5b14d",
+  "children": [
+    "dd148fba-fed2-4983-9c55-27d3ff6633ca",
+    "7dbe36c2-ca24-4a86-a194-227387be5124",
+    "e98bc255-7b1b-4641-82b3-dc7ea6351d8b",
+    "4dade298-e045-4ef5-8054-53f87d28a840",
+    "8dcf728b-1762-425e-9ebb-802494bd32f6",
+    "22d17a6f-ca29-4ece-8a31-7f1267fd182b"
+  ],
+  "befores": [
+    {
+      "name": "_UnitTestCase__pytest_class_setup",
+      "status": "passed",
+      "start": 1607694298604,
+      "stop": 1607694298604
+    }
+  ],
+  "afters": [
+    {
+      "name": "_UnitTestCase__pytest_class_setup::0",
+      "status": "passed",
+      "start": 1607694343902,
+      "stop": 1607694343902
+    }
+  ],
+  "start": 1607694298604,
+  "stop": 1607694343902
+}
