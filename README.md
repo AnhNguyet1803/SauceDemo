@@ -21,8 +21,8 @@ Install Allure
 
 Allure Pytest Plugin
     Installation and Usage
-        $ pip install allure-pytest
+        `$ pip install allure-pytest
         $ py.test --alluredir=<%allure_result_folder%> ./tests
-        $ allure serve <%allure_result_folder%>
+        $ allure serve <%allure_result_folder%>`
 
 
