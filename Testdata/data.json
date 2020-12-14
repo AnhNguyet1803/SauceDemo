@@ -1,0 +1,11 @@
+[
+  {
+    "message": "Epic sadface: Password is required"
+  },
+  {
+    "message": "Epic sadface: Username is required"
+  },
+  {
+    "message": "Epic sadface: Username and password do not match any user in this service"
+  }
+]

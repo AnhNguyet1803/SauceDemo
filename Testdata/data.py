@@ -16,13 +16,13 @@ class Data():
     # PASSWORD = 'secret_sauce!'
     BROWSER = 'Chrome'
 
-    ACCOUNT_CSV_FILE = './Testdata/accounts.csv'
-    ACCOUNT_JSON_FILE = './Testdata/accounts.json'
+    # ACCOUNT_CSV_FILE = './Testdata/accounts.csv'
+    MESSAGE_JSON_FILE = './Testdata/data.json'
 
     # def get_account_csv(self):
     #     utility = Utility()
     #     return utility.read_csv(Data.ACCOUNT_CSV_FILE)
 
-    def get_account_json(self):
+    def get_message_json(self):
         utility = Utility()
-        return utility.read_json(Data.ACCOUNT_JSON_FILE)
+        return utility.read_json(Data.MESSAGE_JSON_FILE)
