@@ -1,0 +1,11 @@
+- Selenium
+- Pytest
+- Allure Report
+
+Product
++ Name
++ Decription
++ Price
++ Btn Add to card
++ Btn remove
++ Shopping cart icon or badge icon
