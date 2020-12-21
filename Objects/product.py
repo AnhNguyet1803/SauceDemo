@@ -8,4 +8,4 @@ class Product:
     def __str__(self):
         return '{"name" : "%s", "desc" : "%s","price" : "%s"' % (self.name, self.desc, self.price)
         # return "name is '%s', desc is '%s', price is '%s', quantity is '%s'" % (self.name, self.desc, self.price,
-        # str(self.quantity))
+        #                                                                         str(self.quantity))

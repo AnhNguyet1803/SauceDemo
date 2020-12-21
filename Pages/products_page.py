@@ -54,3 +54,15 @@ class ProductsPage(BasePage):
     def read_products_from_json(self):
         data = Data()
         return data.read_products_from_json()
+
+    def add_product_to_card(self, index):
+        self.click(ProductsPageLocators.BUTTON_ADD_TO_CART(index))
+
+    def does_add_button_exist(self, index):
+        return self.is_visible(ProductsPageLocators.BUTTON_ADD_TO_CART(index))
+
+    def remove_product_from_card(self, index):
+        self.click(ProductsPageLocators.BUTTON_REMOVE(index))
+
+    def does_remove_button_exist(self, index):
+        return self.is_visible(ProductsPageLocators.BUTTON_REMOVE(index))

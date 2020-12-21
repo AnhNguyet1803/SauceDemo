@@ -14,6 +14,8 @@ class Utility():
         data = []
         with open(fileName, 'r') as jsonfile:
             reader = json.load(jsonfile)
-            for row in reader:
+            for row in reader['products']:
                 data.append(row)
+                print(row)
+        jsonfile.close()
         return data
