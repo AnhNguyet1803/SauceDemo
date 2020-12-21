@@ -1,0 +1,48 @@
+{
+  "name": "test_login_performance_glitch_user",
+  "status": "skipped",
+  "statusDetails": {
+    "message": "Skipped: <Skipped instance>",
+    "trace": "('C:\\\\Users\\\\LAP12942-local\\\\Desktop\\\\SauceDemo\\\\Testcases\\\\test_login.py', 53, 'Skipped: <Skipped instance>')"
+  },
+  "start": 1608124482420,
+  "stop": 1608124482421,
+  "uuid": "ed7a3477-8694-49e4-a198-b6658db9b67e",
+  "historyId": "62fc2bad68b7023a9fdfc58654b59484",
+  "testCaseId": "933766aee3f6041411aa964c5dcee488",
+  "fullName": "Testcases.test_login.SauceDemo#test_login_performance_glitch_user",
+  "labels": [
+    {
+      "name": "parentSuite",
+      "value": "Testcases"
+    },
+    {
+      "name": "suite",
+      "value": "test_login"
+    },
+    {
+      "name": "subSuite",
+      "value": "SauceDemo"
+    },
+    {
+      "name": "host",
+      "value": "LAP12942"
+    },
+    {
+      "name": "thread",
+      "value": "13992-MainThread"
+    },
+    {
+      "name": "framework",
+      "value": "pytest"
+    },
+    {
+      "name": "language",
+      "value": "cpython3"
+    },
+    {
+      "name": "package",
+      "value": "Testcases.test_login"
+    }
+  ]
+}

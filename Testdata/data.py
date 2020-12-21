@@ -3,6 +3,7 @@ import sys
 sys.path.append(".")
 
 from Utils.utility import Utility
+from Objects.product import Product
 
 
 class Data():
@@ -16,13 +17,14 @@ class Data():
     # PASSWORD = 'secret_sauce!'
     BROWSER = 'Chrome'
 
-    # ACCOUNT_CSV_FILE = './Testdata/accounts.csv'
-    MESSAGE_JSON_FILE = './Testdata/data.json'
+    PRODUCT_JSON_FILE = './Testdata/products.json'
 
-    # def get_account_csv(self):
-    #     utility = Utility()
-    #     return utility.read_csv(Data.ACCOUNT_CSV_FILE)
-
-    def get_message_json(self):
+    def read_products_from_json(self):
+        products = []
         utility = Utility()
-        return utility.read_json(Data.MESSAGE_JSON_FILE)
+        temp = utility.read_json(Data.PRODUCT_JSON_FILE)
+        for obj in temp:
+            product = Product(obj['name'], obj['desc'], obj['price'])
+            products.append(product)
+            print(product)
+        return products

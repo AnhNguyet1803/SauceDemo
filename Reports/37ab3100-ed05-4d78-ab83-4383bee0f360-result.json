@@ -1,0 +1,48 @@
+{
+  "name": "test_login_locked_out_user",
+  "status": "skipped",
+  "statusDetails": {
+    "message": "Skipped: <Skipped instance>",
+    "trace": "('C:\\\\Users\\\\LAP12942-local\\\\Desktop\\\\SauceDemo\\\\Testcases\\\\test_login.py', 36, 'Skipped: <Skipped instance>')"
+  },
+  "start": 1608124482417,
+  "stop": 1608124482417,
+  "uuid": "de719124-d8da-4a15-8b67-5e49133d08ec",
+  "historyId": "43367200d9ee6ed95554eca6a7d40e2e",
+  "testCaseId": "2e2c86b265e647b513b6b569f28832f8",
+  "fullName": "Testcases.test_login.SauceDemo#test_login_locked_out_user",
+  "labels": [
+    {
+      "name": "parentSuite",
+      "value": "Testcases"
+    },
+    {
+      "name": "suite",
+      "value": "test_login"
+    },
+    {
+      "name": "subSuite",
+      "value": "SauceDemo"
+    },
+    {
+      "name": "host",
+      "value": "LAP12942"
+    },
+    {
+      "name": "thread",
+      "value": "13992-MainThread"
+    },
+    {
+      "name": "framework",
+      "value": "pytest"
+    },
+    {
+      "name": "language",
+      "value": "cpython3"
+    },
+    {
+      "name": "package",
+      "value": "Testcases.test_login"
+    }
+  ]
+}

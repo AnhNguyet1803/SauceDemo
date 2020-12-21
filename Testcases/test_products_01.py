@@ -27,11 +27,14 @@ class TestProduct(BaseTest):
         login_page.login(account)
 
         products_page = ProductsPage(self.driver)
+        products_page.read_products_from_json()
         # total = products_page.get_badge_total()
         # print(total)
         # products_page.click_badge_icon()
-        products_page.click_add_to_cart_button(1)
-        products_page.click_remove_button(1)
+        # products_page.click_add_to_cart_button(1)
+        # products_page.click_remove_button(1)
+
+        products_page.get_all_products_info()
 
 
 if __name__ == "__main__":

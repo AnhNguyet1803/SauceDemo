@@ -9,3 +9,7 @@ Product
 + Btn Add to card
 + Btn remove
 + Shopping cart icon or badge icon
+
+class data : utils.class json
+get_product : product = data.read_product
+

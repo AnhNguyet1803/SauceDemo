@@ -1,7 +1,9 @@
 import logging
 
 from Locators.products_locators import ProductsPageLocators
+from Objects.product import Product
 from Pages.base_page import BasePage
+from Testdata.data import Data
 
 
 class ProductsPage(BasePage):
@@ -32,3 +34,23 @@ class ProductsPage(BasePage):
 
     def click_add_to_cart_button(self, index):
         self.click(ProductsPageLocators.BUTTON_ADD_TO_CART(index))
+
+    def get_product_info(self, index):
+        name = self.get_text(ProductsPageLocators.LABEL_PRODUCT_NAME(index))
+        desc = self.get_text(ProductsPageLocators.LABEL_PRODUCT_DESC(index))
+        price = self.get_text(ProductsPageLocators.LABEL_PRODUCT_PRICE(index))
+
+        product = Product(name, desc, price)
+        print(product)
+        return product
+
+    def get_all_products_info(self):
+        products = []
+        for index in range(6):
+            products.append(self.get_product_info(index + 1))
+
+        return products
+
+    def read_products_from_json(self):
+        data = Data()
+        return data.read_products_from_json()

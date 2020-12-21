@@ -10,22 +10,22 @@ class ProductsPageLocators(object):
 
     PART1 = "//div[@class='inventory_item']["
 
-    def BUTTON_REMOVE(self, index=1):
+    def BUTTON_REMOVE(index):
         part2 = "]//button[text()='REMOVE']"
         return By.XPATH, ProductsPageLocators.PART1 + str(index) + part2
 
-    def BUTTON_ADD_TO_CART(self, index=1):
+    def BUTTON_ADD_TO_CART(index):
         part2 = "]//button[text()='ADD TO CART']"
         return By.XPATH, ProductsPageLocators.PART1 + str(index) + part2
 
-    def LABEL_PRODUCT_NAME(self, index=1):
+    def LABEL_PRODUCT_NAME(index):
         part2 = "]//div[@class='inventory_item_name']"
         return By.XPATH, ProductsPageLocators.PART1 + str(index) + part2
 
-    def LABEL_PRODUCT_DESC(self, index=1):
+    def LABEL_PRODUCT_DESC(index):
         part2 = "]//div[@class='inventory_item_desc']"
         return By.XPATH, ProductsPageLocators.PART1 + str(index) + part2
 
-    def LABEL_PRODUCT_PRICE(self, index=1):
+    def LABEL_PRODUCT_PRICE(index):
         part2 = "]//div[@class='inventory_item_price']"
         return By.XPATH, ProductsPageLocators.PART1 + str(index) + part2
