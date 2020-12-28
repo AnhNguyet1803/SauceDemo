@@ -11,11 +11,9 @@ from Utils.utility import Utility
 class BaseTest(unittest.TestCase):
     @classmethod
     def setUp(self):
-        # Setting up how we want Firefox to run
+        # Setting up how we want Chrome to run
         utility = Utility()
         browser = utility.get_browser()
-
-        # self.driver = webdriver.Firefox(executable_path=r'Drivers\geckodriver.exe')
         self.driver = self.startBrowser(browser)
         self.driver.maximize_window()
 

@@ -1,3 +1,4 @@
+selenium
 - Selenium
 - Pytest
 - Allure Report
@@ -13,3 +14,25 @@ Product
 class data : utils.class json
 get_product : product = data.read_product
 
+test_product_02:
+click 3 items
+get_badge -> check 3 items
+get_product_info
+
+step 1: locators: cart_page_locator
+    button: continue shopping
+    check out
+    name(index)
+    desc(index)
+    price(index)
+    quality(index)
+    remove(index)
+
+-get_product:
+total_price = []
+quannity = converst(atual.quality)
+-------------------------
+format code
+re user code
+update readme.md
+commit code

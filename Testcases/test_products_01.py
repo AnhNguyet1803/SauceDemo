@@ -36,15 +36,17 @@ class TestProduct(BaseTest):
         # products_page.click_remove_button(1)
 
         # products_page.get_all_products_info()
-        products = Data.read_products_from_json(self)
+        products = Data.get_products_json(self)
 
         for index, expected_product in enumerate(products, start=1):
             '''Add & remove all products'''
             products_page.add_product_to_card(index)
             self.assertTrue(products_page.does_remove_button_exist(index))
+            self.assertEqual(1, products_page.get_product_badge())
 
             products_page.remove_product_from_card(index)
             self.assertTrue(products_page.does_add_button_exist(index))
+            self.assertTrue(products_page.is_product_badge_invisible())
 
             actual_product = products_page.get_product_info(index)
             assertion = Assertion()

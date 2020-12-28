@@ -3,7 +3,6 @@ import logging
 from Locators.products_locators import ProductsPageLocators
 from Objects.product import Product
 from Pages.base_page import BasePage
-from Testdata.data import Data
 
 
 class ProductsPage(BasePage):
@@ -51,10 +50,6 @@ class ProductsPage(BasePage):
 
         return products
 
-    def read_products_from_json(self):
-        data = Data()
-        return data.read_products_from_json()
-
     def add_product_to_card(self, index):
         self.click(ProductsPageLocators.BUTTON_ADD_TO_CART(index))
 
@@ -66,3 +61,14 @@ class ProductsPage(BasePage):
 
     def does_remove_button_exist(self, index):
         return self.is_visible(ProductsPageLocators.BUTTON_REMOVE(index))
+
+    def get_product_badge(self):
+        total = 0
+        try:
+            total = self.get_text(ProductsPageLocators.ICON_BADGE_HAS_ITEMS)
+        except:
+            pass
+        return int(total)
+
+    def is_product_badge_invisible(self):
+        return self.is_invisible(ProductsPageLocators.ICON_BADGE_HAS_ITEMS)
