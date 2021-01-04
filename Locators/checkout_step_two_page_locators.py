@@ -9,7 +9,7 @@ class CheckoutTwoPageLocators(object):
     LABEL_TAX = (By.XPATH, "//div[@class='summary_tax_label']")
     LABEL_TOTAL = (By.XPATH, "//div[@class='summary_total_label']")
 
-    CART_ITEM = "//div[@class='cart_list']//div[@class='cart_item']["
+    # CART_ITEM = "//div[@class='cart_list']//div[@class='cart_item']["
 
     LABEL_PAYMENT_INFO = (By.XPATH, "//div[@class='summary_value_label'][1]")
     LABEL_SHIPPING_INFO = (By.XPATH, "//div[@class='summary_value_label'][2]")

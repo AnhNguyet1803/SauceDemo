@@ -12,6 +12,7 @@ Install Selenium with Python
 Install Selenium WebDriver
 - Chrome Driver: http://chromedriver.chromium.org/downloads
 - Firefox Driver: https://github.com/mozilla/geckodriver/releases
+- And, extract to folder Drivers
 
 Install Allure 
 - Access to
@@ -21,8 +22,9 @@ Install Allure
 
 Allure Pytest Plugin
     Installation and Usage
+    
         `$ pip install allure-pytest
         $ py.test --alluredir=<%allure_result_folder%> ./Testcase
-        $ allure serve %allure_result_folder%`
+        $ allure serve <%allure_result_folder%>`
 
 
